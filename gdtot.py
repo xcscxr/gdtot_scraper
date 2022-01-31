@@ -1,5 +1,3 @@
-# TG@YukkiSenpai
-
 import requests, re, base64
 
 # file url
