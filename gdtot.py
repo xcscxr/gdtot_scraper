@@ -3,7 +3,7 @@ import base64
 import requests
 from urllib.parse import urlparse, parse_qs
 
-# file url
+# gdtot url
 URL = "" 
 
 # add your crypt cookie here
@@ -57,10 +57,11 @@ def gdtot_dl(url):
         info['error'] = True
         return info
 
+    info['error'] = False
     info['gdrive_link'] = gdrive_url
     
     return info
-    
+
 # ==========================================
 
 info = gdtot_dl(URL)
@@ -68,15 +69,3 @@ info = gdtot_dl(URL)
 print(info)
 
 # ==========================================
-'''
-SAMPLE OUTPUT:
-{
-    'error': False,
-    'message': 'Some status message..' 
-    'title': 'Filename on website', 
-    'size': '627.03 MB', 
-    'date': '11-Feb-2022 02:47:12', 
-    'src_url': 'https://gdtot-domain/file/XXX', 
-    'gdrive_link': 'https://drive.google.com/open?id=XXXX...'
-}
-'''
