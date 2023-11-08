@@ -7,7 +7,7 @@ url = 'https://new.gdtot.zip/file/1234567890'
 
 api = 'https://5e04.uuxd.workers.dev'
 api_res = requests.get(api, params={
-    'url': 'https://new.gdtot.zip/file/10245713983'
+    'url': url
 }).text
 
 tree = html.fromstring(api_res)
