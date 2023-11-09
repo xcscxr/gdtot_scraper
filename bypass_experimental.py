@@ -5,7 +5,7 @@ url = 'https://new.gdtot.zip/file/1234567890'
 
 # ---------------------------------------------
 
-api = 'https://5e04.uuxd.workers.dev'
+api = 'https://6e0.uuxd.workers.dev'
 api_res = requests.get(api, params={
     'url': url
 }).text
